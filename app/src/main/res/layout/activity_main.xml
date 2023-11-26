@@ -7,6 +7,14 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="8dp"
+        android:text="Register" />
+
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="150dp"
@@ -21,28 +29,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/logoImageView"
+        android:layout_marginTop="32dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="32dp"
-        />
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:layout_marginTop="16dp"
-        />
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:text="Login"
-        android:layout_marginTop="32dp"
-        />
+        android:layout_marginTop="24dp"
+        android:text="Login" />
 
 </RelativeLayout>
